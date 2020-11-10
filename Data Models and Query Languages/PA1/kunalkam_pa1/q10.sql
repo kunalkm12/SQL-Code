@@ -1,0 +1,2 @@
+use sakila;
+SELECT film1.title as film_1, film2.title as film_2, film1.length, film1.rating FROM film film1, film film2 WHERE film1.title > film2.title and film1.length = film2.length AND film1.rating = film2.rating ORDER BY film1.title;

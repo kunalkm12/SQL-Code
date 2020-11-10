@@ -1,0 +1,2 @@
+use employees;
+SELECT dept_emp.emp_no as emp, dept_manager.emp_no as mgr, dept_emp.from_date FROM dept_manager INNER JOIN dept_emp ON dept_manager.dept_no = dept_emp.dept_no WHERE dept_manager.to_date = '9999-01-01' AND dept_emp.to_date = '9999-01-01' ORDER BY dept_emp.emp_no;
